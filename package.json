@@ -1,0 +1,29 @@
+{
+  "name": "algoritmos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbraga/algoritmos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbraga/algoritmos/issues"
+  },
+  "homepage": "https://github.com/rbraga/algoritmos#readme",
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5",
+    "undefined": "^0.1.0"
+  },
+  "dependencies": {
+    "@types/jest": "^25.2.3"
+  }
+}
