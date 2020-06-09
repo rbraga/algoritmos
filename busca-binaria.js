@@ -1,36 +1,28 @@
 var assert = require('assert');
 
-var doSearch = function(array, targetValue) {
-	var min = 0;
-	var max = array.length - 1;
-    let guess;
-    var i = 0;
-    
-    while(min <= max) {
-        guess = Math.floor((min+max)/2);
-        
-        i++;
-        console.log(guess);
-        
-        if (array[guess] === targetValue) {
-            console.log(i);
-            return guess;
-        } else if (array[guess] < targetValue) {
-            min = guess+1;
+var buscaBinaria = function (array, valor) {
+    let esquerda = 0;
+    let direita = array.length - 1;
+    while (esquerda <= direita) {
+        const mid = esquerda + Math.floor((direita - esquerda) / 2);
+        if (array[mid] === valor) {
+            return mid;
+        }
+        if (array[mid] < valor) {
+            esquerda = mid + 1;
         } else {
-            max = guess-1;
+            direita = mid - 1;
         }
     }
-    
-	return -1;
+    return -1;
 };
 
-var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 
+var primos = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
     41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
 
-var result = doSearch(primes, 73);
-console.log("Found prime at index " + result);
+var resultado = buscaBinaria(primos, 73);
+console.log("Primo encontrado no indice " + resultado);
 
-assert.equal(doSearch(primes, 73), 20);
-assert.equal(doSearch(primes, 41), 12);
-assert.equal(doSearch(primes, 17), 6);
+assert.equal(buscaBinaria(primos, 73), 20);
+assert.equal(buscaBinaria(primos, 41), 12);
+assert.equal(buscaBinaria(primos, 17), 6);
