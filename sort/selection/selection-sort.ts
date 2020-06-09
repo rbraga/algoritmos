@@ -1,5 +1,5 @@
-import {swap} from './swap';
-import {indexOfMinimum} from './index-of-minimum';
+import {swap} from './swap/swap';
+import {indexOfMinimum} from './index-of-minimum/index-of-minimum';
 
 var selectionSort = function(array: number[]) {
     for(var i = 0; i < array.length; i++) {
@@ -9,6 +9,3 @@ var selectionSort = function(array: number[]) {
 }
 
 export {selectionSort}
-// var array = [22, 11, 99, 88, 9, 7, 42];
-// selectionSort(array);
-// console.log("Array after sorting:  " + array);
