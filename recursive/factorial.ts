@@ -8,4 +8,10 @@ function factorial(n: number) {
     return result;
 };
 
-export { factorial };
+function recursiveFactorial(n: number): number {
+    if (n === 0) return 1;
+
+    return recursiveFactorial(n-1) * n;
+}
+
+export { factorial, recursiveFactorial };
