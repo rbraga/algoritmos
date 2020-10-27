@@ -1,4 +1,4 @@
-var binarySearch = function (array: string | any[], value: number) {
+const binarySearch = function (array: string | any[], value: number) {
     let left = 0;
     let right = array.length - 1;
     while (left <= right) {
@@ -15,4 +15,4 @@ var binarySearch = function (array: string | any[], value: number) {
     return -1;
 };
 
-export { binarySearch as binarySearch }
+export { binarySearch }

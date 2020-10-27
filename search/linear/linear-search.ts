@@ -1,4 +1,4 @@
-var linearSearch = function(array: number[], value: number) {
+const linearSearch = function(array: number[], value: number) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] === value) return i;
     }

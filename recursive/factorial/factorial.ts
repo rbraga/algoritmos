@@ -1,4 +1,4 @@
-function factorial(n: number) {
+const factorial = function(n: number) {
     var result = 1;
     
     for(var i = 1; i <= n; i++) {
@@ -8,7 +8,7 @@ function factorial(n: number) {
     return result;
 };
 
-function recursiveFactorial(n: number): number {
+const recursiveFactorial = function(n: number): number {
     if (n === 0) return 1;
 
     return recursiveFactorial(n-1) * n;

@@ -1,16 +1,8 @@
-function firstCharacter(str: string): string {
-    return str.slice(0,1);
-}
+const firstCharacter = (str: string) => str.slice(0,1);
+const lastCharacter = (str: string) => str.slice(-1);
+const middleCharaters = (str: string) => str.slice(1, -1);
 
-function lastCharacter(str: string): string {
-    return str.slice(-1);
-}
-
-function middleCharaters(str: string): string {
-    return str.slice(1, -1);
-}
-
-function isPalindrome(str: string): boolean {
+const isPalindrome = function(str: string): boolean {
     if (str.length === 0 || str.length === 1) {
         return true;
     }
