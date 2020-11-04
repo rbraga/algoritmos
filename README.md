@@ -9,7 +9,9 @@ Implementações de desafios do curso de algoritmos da Khan Academy escritos em 
 ## Ordenação
 - Ordenação por inserção
 - Ordenação por seleção
+- Ordenação por merge
 
 ## Recursivo
 - Fatorial
 - Palindromo
+- Exponenciação
