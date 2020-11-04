@@ -5,6 +5,7 @@ const merge = function (array: number[], p: number, q: number, r: number) {
     let k = p;
     let i;
     let j;
+    
     for (i = 0; k <= q; i++, k++) {
         lowHalf[i] = array[k];
     }

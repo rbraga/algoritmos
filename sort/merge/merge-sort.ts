@@ -1,4 +1,4 @@
-import { merge } from "./merge";
+import { merge } from './merge/merge';
 
 const mergeSort = function (array: number[], p: number, r: number) {
     if (r - p >= 1) {
