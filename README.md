@@ -10,6 +10,7 @@ Implementações de desafios do curso de algoritmos da Khan Academy escritos em 
 - Ordenação por inserção
 - Ordenação por seleção
 - Ordenação por merge
+- Ordenação quicksort
 
 ## Recursivo
 - Fatorial
